@@ -2,7 +2,7 @@ public class Interpreter {
     private static Expression buildSecurityRule() {
         Expression ruleMinLength = new MinLengthRule(8);
         Expression ruleNumber = new NumberRule();
-        Expression ruleUppercase = new UppercaseRule();
+        Expression ruleUppercase = new UpperCaseRule();
 
 
         Expression combinedLenNum = new AndExpression(ruleMinLength, ruleNumber);
@@ -11,3 +11,4 @@ public class Interpreter {
 
         return finalRule;
 }
+
